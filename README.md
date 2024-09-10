@@ -27,6 +27,10 @@ Options:
 
 ## Installation
 
+### From package
+
+On Arch Linux you can install it with the `mic-indicator` AUR package.
+
 ### Manual installation
 
 Run these commands:

@@ -1,0 +1,15 @@
+/CMakeCache.txt
+/cmake_install.cmake
+/CMakeFiles
+/Makefile
+/*autogen
+/build
+/target
+/.cache
+/.qt
+/compile_commands.json
+/vgcore*
+/*.log
+/*.supp
+/PKGBUILD*
+/*.tar.gz

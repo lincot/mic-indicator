@@ -8,6 +8,8 @@
 int main(int argc, char *argv[]) {
   const QApplication app(argc, argv);
 
+  qRegisterMetaType<pw_stream *>("pw_stream*");
+
   for (auto sig : {SIGINT, SIGTERM}) {
     (void)std::signal(sig, [](int) { QApplication::exit(); });
   }

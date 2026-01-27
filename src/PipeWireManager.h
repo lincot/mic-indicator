@@ -1,7 +1,11 @@
 #pragma once
 
+#include <QMetaType>
 #include <QTimer>
 #include <pipewire/pipewire.h>
+
+Q_DECLARE_OPAQUE_POINTER(pw_stream *)
+Q_DECLARE_METATYPE(pw_stream *)
 
 class PipeWireManager : public QObject {
   Q_OBJECT

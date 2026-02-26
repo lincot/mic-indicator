@@ -8,7 +8,6 @@
 // `pw_stream*` can be used in typed signal/slot connections without a
 // sizeof(incomplete) static_assert.
 Q_DECLARE_OPAQUE_POINTER(pw_stream *)
-Q_DECLARE_OPAQUE_POINTER(pw_stream *)
 Q_DECLARE_METATYPE(pw_stream *)
 
 class PipeWireManager : public QObject {

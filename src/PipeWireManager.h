@@ -4,8 +4,8 @@
 #include <QTimer>
 #include <pipewire/pipewire.h>
 
-// PipeWire’s `pw_stream` is an opaque/incomplete type; Qt6 requires this so
-// `pw_stream*` can be used in typed signal/slot connections without a
+// PipeWire’s `pw_stream` is an opaque/incomplete type; Qt6.4 and lower requires
+// this so `pw_stream*` can be used in typed signal/slot connections without a
 // sizeof(incomplete) static_assert.
 Q_DECLARE_OPAQUE_POINTER(pw_stream *)
 Q_DECLARE_METATYPE(pw_stream *)

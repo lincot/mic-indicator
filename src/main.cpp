@@ -8,6 +8,7 @@
 int main(int argc, char *argv[]) {
   const QApplication app(argc, argv);
 
+  // Register the declared `pw_stream *` metatype (see `src/PipeWireManager.h`).
   qRegisterMetaType<pw_stream *>("pw_stream*");
 
   for (auto sig : {SIGINT, SIGTERM}) {
